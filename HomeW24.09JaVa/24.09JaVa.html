@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //Задание 1
+        var a = +prompt("Привет пользователь ! " + "Впиши свой возраст : ", "Число...");
+        if (a < 2.5)
+            alert("Привет, Малыш !");
+        else
+            if (a < 18.5)
+                alert("Привет, Пацан !");
+            else
+                if (a < 60.5)
+                    alert("Привет, Мужик !");
+                else
+                    alert("Привет, Дед !");
+
+
+        //Задание 2
+        a = +prompt("Привет пользователь ! " + "Впиши число : ", "Число...");
+        if (a == 1)
+            alert("!");
+        else
+            if (a == 2)
+                alert("@");
+            else
+                if (a == 3)
+                    alert("$");
+                else
+                    if (a == 4)
+                        alert("%");
+                    else
+                        if (a == 5)
+                            alert("<");
+                        else
+                            if (a == 6)
+                                alert("^");
+                            else
+                                if (a == 7)
+                                    alert("&");
+                                else
+                                    if (a == 8)
+                                        alert("*");
+                                    else
+                                        if (a == 9)
+                                            alert("(");
+                                        else
+                                            alert(")");
+
+        //Задание 3
+        a = +prompt("Привет пользователь ! " + "Впиши трехзначное число : ", "Число...");
+        var n1 = Math.floor(a / 100);
+        var n2 = Math.floor(a / 10) % 10;
+        var n3 = Math.floor(a % 10);
+        if (n1 == n2 || n2 == n3 || n1 == n3)
+            alert('Найдено совпадение цифр');
+        else
+            alert('Совпадений не найдено');
+
+
+
+         //Задание 4
+         a = +prompt("Привет пользователь ! " + "Впиши пятизначное число : ", "Число...");
+        n1 = Math.floor(a / 1000);
+        n2 = Math.floor(a / 1000) % 10;
+        n3 = Math.floor(a / 100 ) % 10;
+        var n4 = Math.floor(a / 10) % 10;
+        var n5 = Math.floor(a % 10);
+        
+        if ( n1 == n5 || n2 == n4 )
+            alert("Число является палиндромом");
+        else
+            alert("Число не является палиндромом");
+        
+    </script>
+
+</body>
+
+</html>
